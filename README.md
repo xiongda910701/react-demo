@@ -1,4 +1,4 @@
 ##
-cd react-demo
-npm install
+cd react-demo<br/>
+npm install<br/>
 npm start
