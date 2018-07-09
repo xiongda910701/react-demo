@@ -1,0 +1,27 @@
+@import "../../styles/index.less";
+/*首页轮播图样式*/
+.slider-box{
+  position: relative;overflow: hidden;
+  .w(375);.h(150);.bgcec;.mt(40);
+  .imageBox{
+      .w(375);.h(150);
+      img{
+        .w(375);.h(150);
+        animation:mymove 5s infinite;
+      }
+  }
+  .btn-box{
+    position: absolute;.bottom(0);
+    .w(375);.h(30);.lh(30);text-align: center;
+    li{
+      display: inline-block;
+      .w(8);.h(8);.bgcec;.mr(5);
+      border-radius: 100%;
+    }
+    .active{.bgcred;}
+  }
+}
+@keyframes mymove {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
